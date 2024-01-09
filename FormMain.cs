@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Xml;
 using System.Xml.Linq;
 using TypesClassNameExtractor.Core._Forms;
+using xscr33mLabs_TypesClassNameExtractor.Core._Engine;
 
 namespace TypesClassNameExtractor
 {
@@ -22,6 +23,11 @@ namespace TypesClassNameExtractor
         public FormMain()
         {
             InitializeComponent();
+        }
+
+        private async void FormMain_Load(object sender, EventArgs e)
+        {
+            await UpdateCheck.CheckForUpdates();
         }
 
         private void FormMain_DragEnter(object sender, DragEventArgs e)
@@ -194,7 +200,7 @@ namespace TypesClassNameExtractor
             return Color.FromArgb(red, green, blue);
         }
 
-        private void UpdateStatusLabel(string text)
+        public void UpdateStatusLabel(string text)
         {
             if (LabelStatus.InvokeRequired)
             {
