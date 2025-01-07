@@ -16,11 +16,6 @@ Extracts the Classnames of the DayZ SA and Mod types.xml
    2. Start the "xscr33mLabs_TypesClassNameExtractor.exe" located inside the extracted folder and drag your types.xml on the window or choose it via File-Browser!
 
 
-## Sneak-Preview
-
-![Logo](https://cdn.discordapp.com/attachments/1183147757612040324/1194079453702279168/TypesExtractor.png)
-
-
 ## License
 
 [MIT License](https://spdx.org/licenses/)
